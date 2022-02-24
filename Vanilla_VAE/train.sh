@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=5 python train.py \
+    --tensorboard_logging \
+    --data_dir 'data' \
+    --max_sequence_length  20 \
+    --min_occ  3 \
+    --epochs  10 \
+    --batch_size  32 \
+    --learning_rate 0.001 \
+    --hidden_size 256 \
+    --word_dropout 0.5 \
+    --latent_size 64 \
+    --print_every 50 \
+    --logdir 'logs' \
+    --save_model_path 'checkpoints/word_dropout_0.5'
