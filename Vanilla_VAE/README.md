@@ -1,1 +1,4 @@
-## hello
+# Train
+`bash train.sh`
+
+
