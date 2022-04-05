@@ -1,3 +1,4 @@
+from ntpath import join
 import os
 import json
 from statistics import mode
@@ -60,7 +61,7 @@ def main(args):
     print(model)
 
     if args.tensorboard_logging:
-        writer = SummaryWriter(os.path.join(args.logdir, expierment_name(args, ts)))
+        writer = SummaryWriter(os.path.join(args.logdir, args.experiment_name))
         writer.add_text("model", str(model))
         writer.add_text("args", str(args))
         writer.add_text("ts", ts)
@@ -227,7 +228,7 @@ if __name__ == '__main__':
     parser.add_argument('-tb', '--tensorboard_logging', action='store_true')
     parser.add_argument('-log', '--logdir', type=str, default='logs')
     parser.add_argument('-bin', '--save_model_path', type=str, default='checkpoints')
-
+    parser.add_argument('-expn', '--experiment_name', type=str, default='')
     args = parser.parse_args()
 
     args.rnn_type = args.rnn_type.lower()
