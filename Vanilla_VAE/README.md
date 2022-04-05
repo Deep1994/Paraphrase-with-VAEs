@@ -7,11 +7,11 @@
 # Sample Results
 ```
 ----------SAMPLES----------
-what is the most important thing in the world ? what is the reason <eos>
-how much time is a freshman drink ? <eos>
-how can i get a permanent residence in the world ? <eos>
-when is the best time to study medicine and why or why not <eos>
-what is the total amount of the existence of the universe ? <eos>
+how can i learn hacking ? <eos>
+what are the best ways to lose weight ? <eos>
+what is the best way to increase traffic to your website ? <eos>
+what is the best way to learn c language ? <eos>
+what is the best way to learn hacking ? <eos>
 -------INTERPOLATION-------
 can i increase my height ? <eos>
 can i make money online ? <eos>
